@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #FFF8F5;
+    color: #5D4037;
+    padding-bottom: 20px;
+}
+body h1 {
+    text-align: center;
+}
+
+.main-w {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    min-height: 90vh;     
+}
+
+.settings {
+    width: auto;
+    height: auto; 
+    padding-left: 50px;
+    margin-top: 50px;
+}
+
+.settings h3 {
+    font-size: 25px;
+    padding-left: 11px;
+    margin-top: 29px;
+    margin-bottom: 8px;
+
+}
+
+.set-size {
+    width: 350px;
+    height: 192px;
+    border: 2px solid #FFB74D;
+    border-radius: 20px;
+    background-color: #FFFAF0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center; 
+    cursor: pointer; 
+}
+
+.option-text {
+    font-size: 32px;
+}
+
+.radio-input {
+    display: none;
+}
+
+.radio-custom {
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    width: 143px;
+    height: 143px;
+}
+
+.radio-one {
+    background-image: url('./img/sous 1.svg');
+}
+
+.radio-two {
+    background-image: url('./img/sous 2.svg');
+}
+
+.radio-one:hover {
+    background-image: url('./img/active-sous 1.svg');
+}
+
+.radio-two:hover {
+    background-image: url('./img/active-sous 2.svg');
+}
+
+.set-ingredients {
+
+    width: 350px; 
+    height: 521px;
+    border: 2px solid #FFB74D;
+    border-radius: 20px;
+    background-color: #FFFAF0;
+    padding-top: 9px;
+}
+
+.category {
+    margin-bottom: 10px;
+    padding-left: 11px;
+}
+
+.category-hr {
+    padding: 0px;
+
+    border: 1px solid #FFB74D;
+}
+
+.category-b {
+    border: 1px solid #FFB74D;
+    border-radius: 20px;
+    padding: 6px 34px 6px 34px;
+    background-color: #FFF8F5;
+    margin-bottom: 8px;
+}
+
+.add {
+    width: 310px;
+}
+
+.category-b:hover {
+    background-color: #FFDBA5;
+}
+
+.add-ingridients {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0px 10px 10px 10px;
+}
+
+.add-btn-ing {
+    margin: 10px 0px 0px 0px;
+    width: 150px;
+    height: 150px;
+    border: none;
+    background: none;
+}
+
+.pizza {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pizza h1 {
+    font-size: 100px;
+    margin-bottom: 41px;
+}
+
+#piz-img {
+    width: 90%;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.sum-resume {
+    width: 250px;
+    height: 40px;
+    border: 2px solid #FFB74D;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.pizza-container{
+    position: relative; 
+    width: 550px; 
+    height: 550px; 
+    border-radius: 50%;
+}
+
+.draggable-ing {
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    z-index: 5;
+    cursor: grab;
+}
+
+.dlt-btn {
+    margin-top: 25px;
+    border: 3px solid #FFB74D;
+    border-radius: 10px;
+    width: 220px;
+    height: 60px;
+    font-size: 24px;
+    color: #FFFFFF;
+    background-color: #FF6B6B;
+
+}
+
+.dlt-btn:hover {
+    border: 6px solid #FFB74D;
+}
+
+.dlt-btn:active {
+    background-color: #FF3F3F;
+}
+
+.resume {
+    width: auto;
+    height: auto; 
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.resume-block {
+    margin-top: 28px;
+    width: 431px;
+    min-height: 670px;
+    border: 2px solid #FFB74D;
+    border-radius: 20px;
+    background-color: #FFFAF0;
+    padding-left: 11px;
+    padding-top: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.components-name {
+    font-size: 24px;
+    margin-left: 13px;
+    margin-bottom: 40px;
+}
+
+.gh-img:hover {
+    filter: brightness(0) saturate(100%) invert(25%) sepia(5%) saturate(3847%) hue-rotate(327deg) brightness(87%) contrast(82%);
+}
+
+@media (max-width: 1680px) {
+    .set-size {
+        width: 331px;
+        height: 160px;
+    }
+
+    .set-ingredients {
+        width: 331px;
+        height: 420px;
+    }
+
+    .resume-block {
+        width: 331px;
+    }
+    .pizza h1 {
+        font-size: 64px;
+    }
+}

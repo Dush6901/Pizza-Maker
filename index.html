@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Pizza</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-w">
+        <div class="settings">
+            <h3>Размер:</h3>
+            <div class="set-size" onload="registerEvents();">
+                <label class="radio-label">
+                    <input type="radio" name="option-size" value="1" class="radio-input">
+                    <span class="radio-custom radio-one"></span>
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="option-size" value="2" class="radio-input">
+                    <span class="radio-custom radio-two"></span>
+                </label>
+            </div>
+
+            <h3>Ингредиенты:</h3>
+            <div class="set-ingredients">
+                <div class="category">
+                    <button class="category-b" onclick="handleCheeseClick(this)">Сыры</button>
+                    <button class="category-b" onclick="handleMeatClick(this)">Мясо</button>
+                    <button class="category-b" onclick="handleVegClick(this)">Овощи</button>
+                    <button class="category-b add" onclick="handleAdditClick(this)">Допы</button>
+                </div>
+                <hr class="category-hr">
+                <div class="add-ingridients">
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="pizza">
+            <h1>Make Pizza</h1>
+
+            <div class="pizza-container" ondrop="drop(event)" ondragover="allowDrop(event)" >
+                <img id="piz-img" src="./img/empty-pizza.svg" alt="pizza-img" style="width: 100%;">
+            </div>
+            <button class="dlt-btn" onclick="deleteButton()">Очистить все</button>
+        </div>
+    
+        <div class="resume">
+            <h1>Привет!</h1>
+            <div class="resume-block">
+                <p class="components-name">
+                    Спасибо, что зашли на мой проект. 
+                    Другие проекты вы можете найти на моей GitHub
+                </p>
+                <a href="https://github.com/Dush6901"><img src="./img/GitHub-icon.svg" alt="github" class="gh-img"></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
